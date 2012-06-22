@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Test</title>
+    <title>Agência de Mapas de Almada</title>
     <link rel="stylesheet" href="map.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="ext/mmg.css" type="text/css" />
@@ -45,7 +45,7 @@
 
     // Make a new map in #map
     var main = Map('map', {
-      api: 'http://a.tiles.mapbox.com/v3/examples.map-8j8lv902.jsonp',
+      api: 'http://a.tiles.mapbox.com/v3/mapiator.map-9xbswvpi.jsonp',
       zoomRange: [0, 15],
       features: [
         'zoomwheel',
@@ -56,9 +56,9 @@
         'layerHash'
       ]
     }, function(tilejson) {
-      document.title = tilejson.name;
-      $('h1.map-title').text(tilejson.name);
-      $('p.description').text(tilejson.description);
+    //       document.title = tilejson.name;
+          $('h1.map-title').text(tilejson.name);
+          $('p.description').text(tilejson.description);
     });
 
     </script>
